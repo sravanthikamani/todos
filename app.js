@@ -65,7 +65,7 @@ todo LIKE '%${search_q}%' AND priority='${priority}';`
 SELECT * FROM todo 
 WHERE todo LIKE '%${search_q}%';`
   }
-
+git branch -M main
   data = await db.all(getTodosQuery)
   response.send(data)
 })
